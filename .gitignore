@@ -19,6 +19,8 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/composer.lock
+/composer.phar
 
 
 # Node artifact files
