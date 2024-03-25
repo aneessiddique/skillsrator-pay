@@ -4,18 +4,18 @@
         <div class="row">
             <div class="col-xl-12 wrapper">
                 <div class="copyrights">
-                    <p>© Extreme Commerce. All Rights Reserved.</p>
+                    <p>© Skillsrator. All Rights Reserved.</p>
                 </div>
                 <div id="social-icons">
-                    <a href="#" title="Extreme Commerce on Facebook"><img src="/assets/img/fb.svg"></a>
-                    <a href="#" title="Extreme Commerce on Linkedin"><img src="/assets/img/li.svg"></a>
-                    <a href="#" title="Extreme Commerce on Youtube"><img src="/assets/img/yt.svg"></a>
-                    <a href="#" title="Extreme Commerce on Twitter"><img src="/assets/img/tw.svg"></a>
+                    <a href="#" title="Skillsrator on Facebook"><img src="/assets/img/fb.svg"></a>
+                    <a href="#" title="Skillsrator on Linkedin"><img src="/assets/img/li.svg"></a>
+                    <a href="#" title="Skillsrator on Youtube"><img src="/assets/img/yt.svg"></a>
+                    <a href="#" title="Skillsrator on Twitter"><img src="/assets/img/tw.svg"></a>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     {{-- <script src="https://unpkg.com/@coreui/coreui@2.1.16/dist/js/coreui.min.js"></script> --}}
