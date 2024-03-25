@@ -1,0 +1,142 @@
+#ec-pay-nav {
+    padding: 10px 0;
+    border-bottom: 1px solid #DDD8D8;
+    margin-bottom: 30px;
+}
+
+.ec-logo {
+    float: left;
+}
+
+.ec-pay-cancel {
+    float: right;
+    margin-top: 10px;
+}
+
+.ec-pay-cancel .btn {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 10.5px 41.5px;
+    background: #0086E4;
+    border-radius: 4px;
+}
+
+/* Main */
+#ec-pay-main {
+    margin-bottom: 100px;
+}
+
+#ec-pay-main .main-card {
+    border: 1px solid #DDD8D8;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+#ec-pay-main .main-card .title-price {
+    margin-bottom: 90px;
+}
+
+#ec-pay-main .main-card .card-title {
+    font-weight: 600;
+    font-size: 45px;
+    color: #0086E4;
+}
+
+#ec-pay-main .main-card .price {
+    font-weight: 600;
+    font-size: 47px;
+    color: #183B56;
+}
+
+#ec-pay-main .main-card .choose-bank {
+    font-weight: 500;
+    font-size: 20px;
+    color: #183B56;
+    margin-bottom: 25px;
+}
+
+#ec-pay-main .main-card .po-card {
+    box-shadow: 0px 1px 31px 3px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 80px;
+}
+
+#ec-pay-main .main-card .po-card .card-body {
+    padding: 0 20px;
+}
+
+#ec-pay-main .main-card .po-card .payment-options {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#ec-pay-main .main-card .po-card .payment-options li {
+    height: 80px;
+    align-content: center;
+    display: flex;
+}
+
+#ec-pay-main .main-card .po-card .payment-options li + li {
+    border-top: 1px solid #DDD8D8;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po .po-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #5B5B5B;
+    margin-bottom: 0;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po .left {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po .left .po-img {
+    margin-right: 20px;
+    width: 130px;
+}
+
+#ec-pay-main .main-card .po-card .payment-options a::after {
+    content: url("../img/right-arrow.svg");
+    float: right;
+}
+
+/* Footer */
+footer {
+    background:#303030;
+    color: #fff;
+    padding: 15px 0;
+}
+.copyrights {
+ float: left;   
+}
+.copyrights p {
+    margin-bottom: 0;
+}
+#social-icons {
+    float: right;
+    display: flex;
+    position: relative;
+    bottom: 2px;
+}
+#social-icons a + a {
+    margin-left: 10px;
+}
+#social-icons a img {
+    margin-left: 5px;
+    width: 30px;
+}

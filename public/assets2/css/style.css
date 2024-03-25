@@ -1,0 +1,692 @@
+#ec-pay-nav {
+    padding: 10px 0;
+    border-bottom: 1px solid #DDD8D8;
+    margin-bottom: 30px;
+}
+
+.ec-logo {
+    float: left;
+}
+
+.ec-pay-cancel {
+    float: right;
+    margin-top: 10px;
+}
+
+.ec-pay-cancel .btn {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 10.5px 41.5px;
+    background: #0086E4;
+    border-radius: 4px;
+}
+
+/* Main */
+#ec-pay-main {
+    max-width: 880px;
+    margin: 0 auto 100px;
+}
+
+#ec-pay-main .main-card {
+    border: 0px solid #DDD8D8;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#ec-pay-main .main-card .title-price {
+    margin-bottom: 90px;
+}
+
+#ec-pay-main .main-card .card-title {
+    font-weight: 600;
+    font-size: 45px;
+    color: #0086E4;
+}
+
+#ec-pay-main .main-card .price {
+    font-weight: 600;
+    font-size: 47px;
+    color: #183B56;
+}
+
+#ec-pay-main .main-card .choose-bank {
+    font-weight: 500;
+    font-size: 20px;
+    color: #183B56;
+    margin-bottom: 25px;
+}
+
+#ec-pay-main .main-card .po-card {
+    box-shadow: 0px 1px 31px 3px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    border: none;
+    /* margin-bottom: 80px; */
+}
+
+#ec-pay-main .main-card .po-card .card-body {
+    padding: 0 20px;
+}
+
+#ec-pay-main .main-card .po-card .payment-options {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#ec-pay-main .main-card .po-card .payment-options li {
+    height: 110px;
+    align-content: center;
+    display: flex;
+    padding: 20px;    
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ec-pay-main .main-card .po-card .payment-options li + li {
+    border-top: 1px solid #DDD8D8;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    transition: all .3s;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po:hover {
+    transform: scale(0.95);
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po .po-name {
+    font-weight: 600;
+    font-size: 22px;
+    color: #5B5B5B;
+    margin-bottom: 0;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po .left {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#ec-pay-main .main-card .po-card .payment-options .single-po .left .po-img {
+    margin-right: 20px;
+    width: 130px;
+}
+
+#ec-pay-main .main-card .po-card .payment-options a::after {
+    content: url("../img/right-arrow.svg");
+    float: right;
+}
+
+/* Footer */
+footer {
+    background:#303030;
+    color: #fff;
+    padding: 15px 0;
+}
+.copyrights {
+ float: left;   
+}
+.copyrights p {
+    margin-bottom: 0;
+}
+#social-icons {
+    float: right;
+    display: flex;
+    position: relative;
+    bottom: 2px;
+}
+#social-icons a + a {
+    margin-left: 10px;
+}
+#social-icons a img {
+    margin-left: 5px;
+    width: 30px;
+}
+
+
+.flex{
+    display: flex;
+}
+@media all and (max-width: 991px) {
+  .no-flex-sm{
+    display: block !important;
+  }
+}
+@media all and (max-width: 767px) {
+  .no-flex-xs{
+    display: block !important;
+  }
+}
+
+.p-0{
+    padding: 0;
+}
+.img img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*hero*/
+.hero_fees{
+    padding: 60px 20px;
+    margin-bottom: 100px;
+    background-image: url(../img/hero-fees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 380px;
+    border-radius: 20px;
+    background-position: center;
+}
+.hero_fees .title-price  {
+    margin-bottom: 45px;
+    text-align: center;
+}
+.hero_fees *{
+    color: #fff;
+}
+.hero_fees h1{
+    font-size: 45px;
+}
+.hero_fees h2{
+    font-size: 45px;
+}
+/*.form_row {
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+.form_row .form-control{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 20px 70px 22px 20px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.form_row .form-control:focus {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+.form_row img{
+    margin: 30px 20px 0 8px;
+}
+.form_row span{
+    position: absolute;
+    right: 33px;
+    bottom: 13px;
+    font-size: 20px;
+}
+.form_row #pay_usd{
+    position: absolute;
+    left: 255px;
+    bottom: 122px;
+    font-size: 14px;
+}*/
+
+.form_row {
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+.form_row .form-control{
+    background-color: transparent;
+    /* color: #000; */
+    border: 1px solid #fff;
+    padding: 20px 70px 22px 20px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.form_row .form-control:focus {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+.form_row img{
+    margin: 30px 20px 0 8px;
+}
+.form_row span{
+    position: absolute;
+    right: 33px;
+    bottom: 13px;
+    font-size: 20px;
+}
+.form_row #pay_usd,
+.form_row #pay_pkr{
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    font-size: 20px;
+}
+@media all and (max-width: 991px) {
+    .hero_fees h1, .hero_fees h2 {
+        font-size: 30px;
+    }
+    .form_row {
+        max-width: 600px;
+        margin-left: 15px;
+    }
+}
+@media all and (max-width: 767px) {
+  .hero_fees {
+    padding: 30px 20px;
+    margin-bottom: 50px;
+  }
+  .form_row{
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .form_row img {
+    margin: 10px auto;
+  }
+}
+
+
+/*voucher*/
+.voucher{
+    padding: 30px 20px 30px 40px;
+    margin-bottom: 100px;
+    background-image: url(../img/bg-voucher.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 320px;
+    background-position: center;
+    max-width: 1040px;
+    margin: 0 auto 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E2A47;
+}
+.voucher .title-price  {
+    margin-bottom: 45px;
+    text-align: center;
+}
+.voucher h1{
+    font-size: 45px;
+}
+.voucher h2{
+    font-size: 45px;
+}
+@media all and (max-width: 991px) {
+  .voucher {
+    padding: 30px 20px 30px 40px;
+    margin-bottom: 50px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    min-height: 250px;
+  }
+  .voucher .title-price {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .voucher h2 {
+    word-break: break-all;
+    font-size: 30px;
+  }
+  .voucher br{
+    display: none
+  }
+}
+
+@media all and (max-width: 767px) {
+  .voucher {
+    padding: 30px 20px 30px 40px;
+    margin-bottom: 50px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    min-height: 280px;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+
+.pay_flow h2{
+  font-size: 45px;
+  margin-bottom: 70px;
+}
+@media all and (max-width: 991px) {
+  .pay_flow {
+    padding: 0 20px;
+  }
+  .pay_flow h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+}
+
+
+/*sections*/
+.section{
+    padding: 70px 20px;
+}
+.section h2{
+    margin-bottom: 60px;
+    font-size: 45px;
+}
+.section p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.section .row{
+    align-items: center;
+}
+.bg_grey{
+    background-color: #fbfbfd;
+}
+@media all and (max-width: 767px) {
+  .section {
+    padding: 40px 20px;
+  }
+  .section h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+}
+
+
+.toll_free{
+    padding: 50px 100px;
+    background-color: #fff;
+    max-width: 950px;
+    box-shadow: 0px 0px 10px #e5e5e5;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 20px;
+    margin: 100px auto 5px;
+}
+.toll_free .flex{
+    align-items: center;
+    justify-content: center;
+}
+.toll_free .flex p{
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+@media all and (max-width: 991px) {
+    .toll_free {
+        margin-top: 20px
+    }
+    .toll_free p span{
+        display: block
+    }
+}
+@media all and (max-width: 767px) {
+  .toll_free {
+    padding: 30px 40px;
+    background-color: #fff;
+    max-width: 950px;
+    box-shadow: 0px 0px 10px #e5e5e5;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 20px;
+    margin: 20px auto 5px;
+  }
+}
+
+
+.sbs .flex{
+    position: relative;
+    justify-content:space-between;
+    flex-direction:row;
+    align-items:center;
+    overflow: hidden;
+    max-width: 1100px;
+    margin: auto;
+}
+.sbs .txt {
+    width: 50%;
+    padding: 50px 70px 50px 0px;
+    /*position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: flex-start;*/
+    /*z-index: 1;*/
+}
+.sbs .txt .content {
+    padding-right: 0;
+    max-width: 480px;
+    margin: 0;
+}
+.sbs .txt img{
+      margin-bottom: 30px;
+}
+.sbs .txt h2 {
+    margin-bottom: 15px;
+    font-size: 41px;
+}
+.sbs .txt p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 1.7;
+}
+.sbs .img {
+    width: 50%;
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    height: 471px;
+    background-size: contain !important;
+    position: relative;
+}
+.sbs .img2 {
+    height: 640px;
+}
+.sbs .img3 {
+    height: 663px;
+}
+.sbs .img4 {
+    height: 502px;
+}
+.sbs .img5 {
+    height: 413px;
+}
+.sbs .img #pay_label {
+    position: absolute;
+    left: 114px;
+    bottom: 184px;
+    font-size: 20px;
+}
+
+.sbs.flip .cnt{
+    flex-direction: row-reverse;
+}
+.sbs.flip .img{
+    background-position: left !important;
+}
+.sbs.flip .txt{
+    padding-right: 0;
+    padding-left: 70px;
+}
+.dots {
+  text-align: center;
+  position: relative;
+  margin: -60px 0 -15px;
+}
+.dots2 {
+  margin: -30px 0 -35px;
+}
+.dots3 {
+  margin: -48px 0 -15px;
+}
+.dots4 {
+  margin: -57px 0 -15px;
+}
+.dots img{
+  width: 600px;
+}
+.dots .dot_mob{
+  display: none;
+}
+.dots-right {
+  text-align: center;
+}
+@media all and (max-width: 1200px) {
+  .sbs .img #pay_label {
+      position: absolute;
+      left: 68px;
+      bottom: 188px;
+  }
+}
+@media all and (max-width: 991px) {
+  .sbs .img #pay_label {
+      position: absolute;
+      left: 100px;
+      bottom: 107px;
+      font-size: 13px;
+  }
+  .sbs .img {
+    height: 400px;
+  }
+  .sbs .txt h2 {
+    margin-bottom: 15px;
+    font-size: 27px;
+  }
+  .sbs .img5 {
+    margin-top: -60px;
+  }
+  .dots {
+    margin: -45px 0 -15px;
+  }
+  .dots2 {
+    margin: -20px 0 -25px;
+  }
+  .dots3 {
+    margin: -25px 0 -15px;
+  }
+}
+@media all and (max-width: 767px) {
+  .sbs {
+    text-align: center;
+  }
+  .sbs .txt {
+    width: 100%;
+    padding: 0px 0px 30px;
+  }
+  .sbs .txt .content {
+    padding-right: 0;
+    max-width: 100%;
+  }
+  .sbs .img {
+    width: 300px;
+    height: 345px;
+    margin: auto;
+    background-position: center !important;
+  }  
+  .sbs .img4 {
+    height: 300px;
+  }
+  .sbs .img5 {
+    height: 280px;
+  }
+  .sbs.flip .img {
+    background-position: center !important;
+  }
+  .sbs.flip .txt {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .sbs .img #pay_label {
+    position: absolute;
+    left: 55px;
+    bottom: 91px;
+  }
+  .dots {
+    text-align: center;
+    margin: -35px 0 0px;
+  }
+  .dots2 {
+    margin: -15px 0 0px;
+  }
+  .dots3 {
+    margin: -25px 0 0px;
+  }
+  .dots img {
+    /*width: 100%*/
+    width: 220px;
+    margin: auto;
+  }
+  .dots img:first-child{
+    display: none;
+  }
+  .dots .dot_mob{
+    display: block;
+  }
+}
+
+/*payment logos*/
+.logos_pay{
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+}
+.logos_pay .column{
+    width: 16.66%;   
+    padding: 0 12px 30px;
+}
+.logos_pay .column .img{
+    background-color: transparent;
+    padding: 15px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 1px 7px 3px rgb(0 0 0 / 4%);
+}
+@media all and (max-width: 991px) {
+    .logos_pay .column {
+        width: 33.33%;
+        padding: 0 12px 30px;
+    }
+}
+@media all and (max-width: 767px) {
+    .logos_pay .column {
+        width: 50%;
+        padding: 0 12px 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
