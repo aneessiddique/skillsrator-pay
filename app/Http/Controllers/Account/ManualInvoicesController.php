@@ -107,7 +107,7 @@ class ManualInvoicesController extends Controller
         $user->details = $transaction->txn_description;
         $user->payment_url = env('APP_URL') . '/invoice/payment/' . $transaction->txn_reference;
         $user->footer = "Thank you";
-        $user->bcc = ["accounts@ec.com.pk", "manual.invoice.sales@ec.com.pk"];
+        // $user->bcc = ["accounts@skillsrator.com.pk", "manual.invoice.sales@skillsrator.com.pk"];
         return $user->notify(new ManualPaymentInvoice());
     }
 
@@ -154,7 +154,7 @@ class ManualInvoicesController extends Controller
     {
         $manualInvoices = ManualInvoices::where('txn_customer_bill_order_id', $request->orderid)->first();
         $txn = Transaction::where('txn_customer_bill_order_id', $request->orderid)->first();
-        // dd($manualInvoices, $txn);        
+        // dd($manualInvoices, $txn);
         if ($manualInvoices && $txn && $manualInvoices->txn_status != $txn->txn_status) {
             $manualInvoices->txn_status = $txn->txn_status;
             $manualInvoices->save();
@@ -174,7 +174,7 @@ class ManualInvoicesController extends Controller
     {
         $manualInvoices = ManualInvoices::find($id);
         $txn = Transaction::where('txn_customer_bill_order_id', $manualInvoices->txn_customer_bill_order_id)->first();
-        // dd($manualInvoices, $txn);        
+        // dd($manualInvoices, $txn);
         if ($txn && $manualInvoices->txn_status != $txn->txn_status) {
             $manualInvoices->txn_status = $txn->txn_status;
             $manualInvoices->save();

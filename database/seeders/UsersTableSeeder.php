@@ -13,14 +13,14 @@ class UsersTableSeeder extends Seeder
             [
                 'id'             => 1,
                 'name'           => 'Admin',
-                'email'          => 'admin@ec.com.pk',
+                'email'          => 'admin@skillsrator.com.pk',
                 'password'       => '$2y$10$OqjdGeRIEyv86oNhcCT7X.HekvePa/oN1YFNCttk8Q5n4A0oyLx0e', //admin123
                 'remember_token' => null,
             ],
             [
                 'id'             => 2,
                 'name'           => 'Accountant',
-                'email'          => 'accounts@ec.com.pk',
+                'email'          => 'accounts@skillsrator.com.pk',
                 'password'       => '$2y$10$OqjdGeRIEyv86oNhcCT7X.HekvePa/oN1YFNCttk8Q5n4A0oyLx0e', //admin123
                 'remember_token' => null,
             ],
