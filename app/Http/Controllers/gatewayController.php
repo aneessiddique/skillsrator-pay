@@ -1056,7 +1056,7 @@ class gatewayController extends Controller
             $ciphertext = openssl_encrypt($plaintext, $cipher, $key, $options = 0, $iv, $tag);
             $ciphertext = $ciphertext . bin2hex($tag); // tag variable generated from encrypt
         }
-        
+
         return redirect()->away(
             $txn->txn_platform_return_url .
                 '?hash=' . $ciphertext .
@@ -1078,7 +1078,7 @@ class gatewayController extends Controller
     //         // 'message' => $Message,
     //         'orderid' => $transaction->txn_customer_bill_order_id,
     //         'tnxid' => $transaction->id
-    //     ); 
+    //     );
     //     $postvars = '';
     //     foreach ($fields as $key => $value) {
     //         $postvars .= $key . "=" . $value . "&";
@@ -1120,7 +1120,7 @@ class gatewayController extends Controller
         $user->subject = "Payment Receipt - " . $txn->txn_customer_bill_order_id;
         $user->greeting = "Dear " . $txn->txn_customer_name . ",";
         $user->message1 = "Please find your recent payment receipt made to Extreme Commmerce.";
-        $user->message2 = "Invoice #: " .$txn->txn_customer_bill_order_id . 
+        $user->message2 = "Invoice #: " .$txn->txn_customer_bill_order_id .
         "<br> Payment Gateway: ". $txn->gateway->ec_pay_gateway_name .
         "<br> Reference#: ". $txn->txn_response_ref .
         "<br> Details: " . $txn->txn_description .
@@ -1156,12 +1156,12 @@ class gatewayController extends Controller
         }
 
         // Log::info(print_r($session,true));
-        
-        
+
+
         if ($session["type"] == 'checkout.session.completed') {
             // Change in stripe api which is not sending payment_intent on checkout
             $txn = Transaction::where('txn_reference', $session["data"]["object"]["client_reference_id"])->first();
-            
+
             if (isset($txn->txn_ec_gateway_id) && $txn->txn_ec_gateway_id > 0) {
                 $gateway = Gateway::find($txn->txn_ec_gateway_id);
             } else {

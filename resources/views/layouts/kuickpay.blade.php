@@ -52,7 +52,7 @@
 			</form>
 		</div>
 	</div>
-	
+
 	<!-- voucher -->
 	<div class="voucher container">
 		<div class="row">
@@ -71,7 +71,7 @@
 			<!-- logos -->
 			<div class="col-md-3 text-center">
 				<p class="img">
-					<img src="/assets2/img/ec-logo.png" alt="" title="">
+					<img src="/assets2/img/sr-logo.png" alt="" title="">
 				</p><br>
 				<p class="img">
 					<img src="/assets2/img/one-link.png" alt="" title="">
@@ -366,8 +366,8 @@
 	<script src="/assets/js/bootstrap.bundle.min.js"></script>
 	<!-- Main -->
 	<script src="/assets/js/main.js"></script>
-	
-	<script>		
+
+	<script>
 		$(function() {
 			$('#cancel-btn').show();
 		});

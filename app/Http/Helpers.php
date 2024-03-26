@@ -20,14 +20,14 @@ if (!function_exists('extract_txn_reference')) {
         }
 
         $replace = 'ref';
-        
+
         // $request_uri = explode('/',request()->getRequestUri());
         // // dd('extract_txn_reference', $request_uri);
         // if($request_uri[1] == 'kuickpay2' || $request_uri[2] == 'kuickpay2'){
         //     $needle = config('gateways.kuickpay2.token_ref');
         //     $prefix = config('gateways.kuickpay2.token_prefix');
         // }
-        
+
         $pos = strpos($haystack, $needle);
         // dd($replace, $prefix, $haystack, $needle, $pos);
         if ($pos !== false) {
@@ -45,10 +45,10 @@ if (!function_exists('generate_txn_reference')) {
         $needle = 'ref';
         $replace = config('gateways.kuickpay.token_ref');
         $prefix = config('gateways.kuickpay.token_prefix');
-        
+
         $request_uri = explode('/',request()->getRequestUri());
         // dd('generate_txn_reference', $request_uri);
-        
+
         $ipn_logs = new IPNLogs();
         $ipn_logs->ipn_gateway = 'kuickpay';
         $ipn_logs->ipn_response = json_encode($request_uri);
@@ -163,7 +163,7 @@ if (!function_exists('get_kuickpay_card_api_token')) {
         $headers = array(
             "Content-Type: application/json",
          );
-         
+
         curl_setopt($ch, CURLOPT_URL, "https://app2.kuickpay.com:5728/api/KPToken");
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_POST, true);

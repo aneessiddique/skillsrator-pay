@@ -52,7 +52,7 @@ Route::get('/kuickpay-ipn/{id}', [gatewayController::class,'kuickpay_card_IPN'])
 // save deposit slip
 Route::post('/deposit_slip_save/{id}', [gatewayController::class,'deposit_slip_save'])->name('deposit_slip_save');
 
-Route::group(['prefix' => 'payment/ec/admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'CheckAdmin']], function () {
+Route::group(['prefix' => 'payment/skillsrator/admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth', 'CheckAdmin']], function () {
     Route::get('/', [HomeController::class,'index'])->name('admhome');
     // Gateways
     Route::delete('gateways/destroy', [GatewaysController::class, 'massDestroy'])->name('gateways.massDestroy');

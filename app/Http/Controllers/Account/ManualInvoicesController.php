@@ -107,7 +107,7 @@ class ManualInvoicesController extends Controller
         $user->details = $transaction->txn_description;
         $user->payment_url = env('APP_URL') . '/invoice/payment/' . $transaction->txn_reference;
         $user->footer = "Thank you";
-        // $user->bcc = ["accounts@skillsrator.com.pk", "manual.invoice.sales@skillsrator.com.pk"];
+        $user->bcc = ["aneessiddique21@gmail.com"];
         return $user->notify(new ManualPaymentInvoice());
     }
 
