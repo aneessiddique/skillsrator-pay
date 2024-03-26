@@ -10,8 +10,11 @@
 /storage/*.key
 /vendor
 .env
+.htaccess
 .env.backup
 .phpunit.result.cache
+/composer.lock
+/composer.phar
 docker-compose.override.yml
 Homestead.json
 Homestead.yaml
@@ -19,8 +22,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-/composer.lock
-/composer.phar
 
 
 # Node artifact files
