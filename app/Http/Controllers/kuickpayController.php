@@ -49,7 +49,7 @@ $ipn_logs->save();
                     $gbp_rate = $currency_rates['GBP_rates']->value;
                     $aud_rate = $currency_rates['AUD_rates']->value;
                     $sar_rate = $currency_rates['SAR_rates']->value;
-            
+
                     if ($transaction->txn_currency_rate && $transaction->txn_currency == 'USD') {
                         $usd_rate = $currency_rates[$transaction->txn_currency_rate]->value;
                     }
@@ -115,12 +115,12 @@ dump($transaction);
                         'Amount_After_DueDate' => $Amount_After_DueDate,
                         'Billing_Month' => $Billing_Month,
                     ];
-                    if($transaction->txn_status == 'completed'){                        
+                    if($transaction->txn_status == 'completed'){
                         $res_data['Date_Paid'] = date("Ymd", (strtotime($transaction->updated_at)));
                         $res_data['Amount_Paid'] = $pkr_amount;
                         $res_data['Tran_Auth_Id'] = ($transaction->txn_response_ref ? $transaction->txn_response_ref : " ");
                     }
-                    if($s == 'P' || $s == 'B'){                        
+                    if($s == 'P' || $s == 'B'){
                         $res_data['Response_Code'] = '02';
                     }
                     return response()->json(["data" => $res_data, "string" => "00" . $data . "" . $res . ""]); // ‘00’ in case of valid inquiry number that exists in the system/database  and status is active
@@ -217,8 +217,8 @@ if($request->mode && $request->mode == 'debug2'){
         $user = new User();
         $user->subject = "Payment Receipt - " . $txn->txn_customer_bill_order_id;
         $user->greeting = "Dear " . $txn->txn_customer_name . ",";
-        $user->message1 = "Please find your recent payment receipt made to Extreme Commmerce.";
-        $user->message2 = "Invoice #: " .$txn->txn_customer_bill_order_id . 
+        $user->message1 = "Please find your recent payment receipt made to Skillsrator.";
+        $user->message2 = "Invoice #: " .$txn->txn_customer_bill_order_id .
         "<br> Payment Gateway: ". $txn->gateway->ec_pay_gateway_name .
         "<br> Reference#: ". $txn->txn_response_ref .
         "<br> Details: " . $txn->txn_description .

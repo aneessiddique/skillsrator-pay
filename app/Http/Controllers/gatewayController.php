@@ -113,7 +113,7 @@ class gatewayController extends Controller
             if ($txn->txn_amount == 0) {
                 $txn->txn_response_ref = 'ec-free-promo';
                 $txn->txn_status = 'completed';
-                $txn->txn_response = json_encode(['txn_status' => 'Free offer from Extreme Commerce.']);
+                $txn->txn_response = json_encode(['txn_status' => 'Free offer from Skillsrator.']);
                 $txn->save();
 
                 return redirect()->away(
@@ -1119,7 +1119,7 @@ class gatewayController extends Controller
         $user = new User();
         $user->subject = "Payment Receipt - " . $txn->txn_customer_bill_order_id;
         $user->greeting = "Dear " . $txn->txn_customer_name . ",";
-        $user->message1 = "Please find your recent payment receipt made to Extreme Commmerce.";
+        $user->message1 = "Please find your recent payment receipt made to Skillsrator.";
         $user->message2 = "Invoice #: " .$txn->txn_customer_bill_order_id .
         "<br> Payment Gateway: ". $txn->gateway->ec_pay_gateway_name .
         "<br> Reference#: ". $txn->txn_response_ref .
