@@ -10,7 +10,6 @@
 /storage/*.key
 /vendor
 .env
-.htaccess
 .env.backup
 .phpunit.result.cache
 /composer.lock
