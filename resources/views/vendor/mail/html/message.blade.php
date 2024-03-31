@@ -21,7 +21,7 @@
 {{-- Footer --}}
 @slot('footer')
 @component('mail::footer')
-© {{ date('Y') }} {{ 'Extreme Commerce' }}. @lang('All rights reserved.')
+© {{ date('Y') }} {{ 'Skillsrator' }}. @lang('All rights reserved.')
 @endcomponent
 @endslot
 @endcomponent

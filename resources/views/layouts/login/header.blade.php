@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-xl-12 wrapper">
 				<div class="ec-logo">
-				<img src="/assets/img/skillsrator-logo.webp" alt="" width="245px">
+				<img src="{{asset('public/assets2/img/sr-logo.png')}}" alt="" width="245px">
 				</div>
 			</div>
 		</div>
