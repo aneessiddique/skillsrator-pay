@@ -6,12 +6,12 @@
                 <div class="copyrights">
                     <p>© Skillsrator. All Rights Reserved.</p>
                 </div>
-                <div id="social-icons">
-                    <a href="#" title="Skillsrator on Facebook"><img src="/assets/img/fb.svg"></a>
-                    <a href="#" title="Skillsrator on Linkedin"><img src="/assets/img/li.svg"></a>
-                    <a href="#" title="Skillsrator on Youtube"><img src="/assets/img/yt.svg"></a>
-                    <a href="#" title="Skillsrator on Twitter"><img src="/assets/img/tw.svg"></a>
-                </div>
+                {{-- <div id="social-icons">
+                    <a href="#" title="Skillsrator on Facebook"><img src="/public/assets/img/fb.svg"></a>
+                    <a href="#" title="Skillsrator on Linkedin"><img src="/public/assets/img/li.svg"></a>
+                    <a href="#" title="Skillsrator on Youtube"><img src="/public/assets/img/yt.svg"></a>
+                    <a href="#" title="Skillsrator on Twitter"><img src="/public/assets/img/tw.svg"></a>
+                </div> --}}
             </div>
         </div>
     </div>
