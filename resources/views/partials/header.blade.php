@@ -4,8 +4,8 @@
             <span class="navbar-toggler-icon"></span>
         </button> -->
         <a class="navbar-brand" href="#" style="width: 245px;">
-            <span class="navbar-brand-full"><img src="assets2/img/sr-logo.png" alt="" width="245px"></span>
-            <span class="navbar-brand-minimized"><img src="assets2/img/sr-logo.png" alt="" width="245px"></span>
+            <span class="navbar-brand-full"><img src="{{asset('assets2/img/sr-logo.png')}}" alt="" width="180px"></span>
+            <span class="navbar-brand-minimized"><img src="{{asset('assets2/img/sr-logo.png')}}" alt="" width="180px"></span>
         </a>
         <!-- <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
             <span class="navbar-toggler-icon"></span>

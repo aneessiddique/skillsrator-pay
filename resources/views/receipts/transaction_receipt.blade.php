@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Payment Receipt - Extreme Commerce</title>
+    <title>Payment Receipt - Skillsrator</title>
 
     <style>
         .invoice-box {
@@ -108,7 +108,7 @@
                     <table>
                         <tr>
                             <td class="title">
-                                <img src="https://pay.ec.com.pk/assets/img/ec-logo.png"
+                                <img src="{{asset('assets2/img/sr-logo.png')}}"
                                     style="width: 100%; max-width: 300px" />
                             </td>
 
