@@ -35,8 +35,8 @@ class kuickpayController extends Controller
                 // $transaction = Transaction::where(['txn_status' => 'draft', 'txn_reference' => $extract_txn_reference])->get();
                 $transaction = Transaction::where(['txn_reference' => $extract_txn_reference])->get();
 
-$ipn_logs->ipn_response = json_encode($extract_txn_reference).json_encode($transaction);
-$ipn_logs->save();
+                $ipn_logs->ipn_response = json_encode($extract_txn_reference).json_encode($transaction);
+                $ipn_logs->save();
 
                 $transaction = isset($transaction[0]) ? $transaction[0] : false;
                 // return $transaction[0];
@@ -91,10 +91,10 @@ $ipn_logs->save();
                         $s = 'B'; //expired
                     }
 
-if(isset($request->mode) && $request->mode == 'txn'){
-dump($pkr_amount);
-dump($transaction);
-}
+                        if(isset($request->mode) && $request->mode == 'txn'){
+                        dump($pkr_amount);
+                        dump($transaction);
+                        }
                     $txn_customer_name = strlen($transaction->txn_customer_name) > 30 ? substr($transaction->txn_customer_name,0,30) : $transaction->txn_customer_name;
                     $Consumer_Detail = str_pad($txn_customer_name, 30, ".");
                     $Bill_Status = $s;
@@ -120,8 +120,11 @@ dump($transaction);
                         $res_data['Amount_Paid'] = $pkr_amount;
                         $res_data['Tran_Auth_Id'] = ($transaction->txn_response_ref ? $transaction->txn_response_ref : " ");
                     }
-                    if($s == 'P' || $s == 'B'){
+                    if($s == 'B'){
                         $res_data['Response_Code'] = '02';
+                    }
+                    if($s == 'P'){
+                        $res_data['Response_Code'] = '03';
                     }
                     return response()->json(["data" => $res_data, "string" => "00" . $data . "" . $res . ""]); // ‘00’ in case of valid inquiry number that exists in the system/database  and status is active
 
