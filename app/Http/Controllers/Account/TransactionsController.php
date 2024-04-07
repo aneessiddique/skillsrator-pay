@@ -292,7 +292,7 @@ class TransactionsController extends Controller
         if(isset($request->voucher_expire) && $request->voucher_expire != 0){
             $expired = $this->voucherExpire($request->voucher_expire);
         }
-
+        Log::debug($request);
         $api_key = ApiKey::find($request->id);
         $ciphertext = substr($request->data, 0, -32); //"4TtIbf2gBuH5tRL8rszxP6MdMtq53kOeG6oR3Xo1D0e1t1TOYmPW70Pep5LsNppWe2xcidlzF+1X2kGxboVuVPNEA63GBGnYXF41vtgiiGZpTDm9WffCUopQRPOWS2nl1DHS84t4gwTSalWOqRcc8pLr88wRn1lkmPYDXQpAeOhc06zQQ/mJxZtqrVBW/ZGOUSs6EUFIKX15eazA+3+eyUaftnEPU6XRSpxDPftS1lolLAs+KZ502hdozAA5VJrw6udNDzOilY4IZWVEMdykygGtAaAGzrL7eupQwxn6LWDA/l0Q9Z39j5HX2FLESNkvOkyDvp88IcbZdTAFXgKwk35TpJvgIP+wf+hdOiO0TqiY5lFs6xjBAej+ujPqs3zGce/3thceSzBqXT2vSjzCHww/i0/Qbd2wiJvo/m4sGbTnAKw9AaEQqGAuZHvR+fyrRRRHRTF/Q4yeIVRIIatv7vgoRKxYBdWT6bO5kx+roMWZLCW7RXP595ma2FPaEzJSt8cyqgPjZEbESSyHuA0R0g0M8Fyfelfcr934VdhKN9Vjb+1ixGb2Rg==";
         $cipher = "aes-128-gcm";
@@ -520,7 +520,7 @@ class TransactionsController extends Controller
             } else {
                 $stripe = new \Stripe\StripeClient(env('STRIPE_SECRET'));
             }
-            
+
             $refund = $stripe->refunds->create(['payment_intent' => $payment_intent]);
             // dd($refund);
 
@@ -574,11 +574,11 @@ class TransactionsController extends Controller
         $gateway_used = Gateway::find($transaction->txn_ec_gateway_id);
 
         if ($gateway_used && (
-                $gateway_used->ec_pay_gateway_url == 'stripe' || 
+                $gateway_used->ec_pay_gateway_url == 'stripe' ||
                 $gateway_used->ec_pay_gateway_url == 'stripep' ||
-                $gateway_used->ec_pay_gateway_url == 'stripem' || 
-                $gateway_used->ec_pay_gateway_url == 'stripemp' || 
-                $gateway_used->ec_pay_gateway_url == 'stripeu' || 
+                $gateway_used->ec_pay_gateway_url == 'stripem' ||
+                $gateway_used->ec_pay_gateway_url == 'stripemp' ||
+                $gateway_used->ec_pay_gateway_url == 'stripeu' ||
                 $gateway_used->ec_pay_gateway_url == 'stripeup'
             )) {
             $response = $this->stripe_refund($transaction);
