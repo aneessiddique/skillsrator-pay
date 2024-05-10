@@ -18,5 +18,10 @@ return [
         'token_ref' => '900',
         'UserName' => 'ECMCADMIN',
         'Pass' => 'ECMC@12345',
-    ],
+    ],'kuickpay2' => [
+        'token_prefix' => '06880',
+        'token_ref' => '800',
+        'UserName' => 'excom',
+        'Pass' => 'excom123',
+    ]
 ];
