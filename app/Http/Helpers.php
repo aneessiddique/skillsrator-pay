@@ -13,8 +13,8 @@ if (!function_exists('extract_txn_reference')) {
             $needle = config('gateways.kuickpay.token_ref');
             $prefix = config('gateways.kuickpay.token_prefix');
         } elseif($extract_prefix == '06880') {
-            $needle = config('gateways.kuickpay2.token_ref');
-            $prefix = config('gateways.kuickpay2.token_prefix');
+            $needle = config('gateways.kuickpay.token_ref');
+            $prefix = config('gateways.kuickpay.token_prefix');
         } else {
             return "not found";
         }
@@ -179,4 +179,6 @@ if (!function_exists('get_kuickpay_card_api_token')) {
         return $response;
     }
 }
+
+
 
