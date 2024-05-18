@@ -90,7 +90,7 @@ class ManualInvoicesController extends Controller
 
         $txn->save();
         // dd($txn);
-        $this->send_email_manual_invoice($txn);
+        // $this->send_email_manual_invoice($txn);
 
         Flash::success('Manual Invoices saved successfully.');
 
