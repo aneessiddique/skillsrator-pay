@@ -9,15 +9,17 @@ if (!function_exists('extract_txn_reference')) {
         $haystack = $ConsumerNumber;
 
         $extract_prefix = substr($haystack, 0, 5);
-        if($extract_prefix == '09740'){
-            $needle = config('gateways.kuickpay.token_ref');
-            $prefix = config('gateways.kuickpay.token_prefix');
-        } elseif($extract_prefix == '06880') {
-            $needle = config('gateways.kuickpay.token_ref');
-            $prefix = config('gateways.kuickpay.token_prefix');
-        } else {
-            return "not found";
-        }
+        $needle = config('gateways.kuickpay.token_ref');
+        $prefix = config('gateways.kuickpay.token_prefix');
+        // if($extract_prefix == '09740'){
+        //     $needle = config('gateways.kuickpay.token_ref');
+        //     $prefix = config('gateways.kuickpay.token_prefix');
+        // } elseif($extract_prefix == '06880') {
+        //     $needle = config('gateways.kuickpay.token_ref');
+        //     $prefix = config('gateways.kuickpay.token_prefix');
+        // } else {
+        //     return "not found";
+        // }
 
         $replace = 'ref';
 
