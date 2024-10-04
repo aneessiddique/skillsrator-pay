@@ -19,6 +19,10 @@ return [
     //     'UserName' => 'SKILLSRATORADMIN',
     //     'Pass' => 'SKILLS@123',
     // ],
+    'stripe' => [
+        'stripe_key' => env('STRIPE_KEY',''),
+        'stripe_secret' => env('STRIPE_SECRET',''),
+    ],
     'kuickpay' => [
         'token_prefix' => '06880',
         'token_ref' => '800',
