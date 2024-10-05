@@ -78,6 +78,7 @@ class ManualInvoicesController extends Controller
         $txn->txn_payment_type = $input["txn_payment_type"];
         $txn->txn_gateway_options = $input['txn_gateway_options'];
         $txn->txn_customer_bill_order_id = $input["txn_customer_bill_order_id"];
+        $txn->txn_expiry_datetime = $input["txn_expiry_datetime"];
         $txn->txn_description = $input["txn_description"];
         $txn->txn_platform_return_url = $input['txn_platform_return_url'];
         $txn->customer_ip = "0.0.0.0";
