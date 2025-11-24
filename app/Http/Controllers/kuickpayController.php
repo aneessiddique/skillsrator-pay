@@ -228,7 +228,7 @@ if($request->mode && $request->mode == 'debug2'){
         "<br> Created On: " . date('dS M, Y H:s:i', strtotime($txn->created_at)) .
         "<br> Paid On: ". date('dS M, Y H:s:i', strtotime($txn->txn_datetime));
         $user->thankyou_message = "Thank you";
-        $user->email = $txn->txn_customer_email; // 'shoaib.iqbal@ec.com.pk';
+        $user->email = $txn->txn_customer_email;
         $user->bcc = 'sales@ec.com.pk';
         $user->attach   = public_path('receipts') . '/' . $uploaded_pdf;
         if(isset(request()->debug)){
